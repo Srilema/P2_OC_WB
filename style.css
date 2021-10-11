@@ -1,0 +1,6 @@
+header {display: flex; justify-content: space-between ;background-color: ;}
+    #Headtitle {justify-content:flex-start;width: 50%;}
+    #menu {display: flex; justify-content: flex-end; width: 50%;}
+        .N {width: 20%; text-align: center;}
+footer {background-color:#F2F2F2; display: flex; Flex-direction: row;justify-content: space-between}
+li {list-style-type: none;}
