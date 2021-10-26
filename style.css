@@ -1,6 +1,178 @@
-header {display: flex; justify-content: space-between ;background-color: ;}
-    #Headtitle {justify-content:flex-start;width: 50%;}
-    #menu {display: flex; justify-content: flex-end; width: 50%;}
-        .N {width: 20%; text-align: center;}
-footer {background-color:#F2F2F2; display: flex; Flex-direction: row;justify-content: space-between}
+@font-face {
+    font-family: 'Raleway';
+    src: url('/Fonts/Raleway-VariableFont_wght.ttf');
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;}
+    #Headtitle {
+        justify-content:flex-start;
+        width: 50%;}
+    #menu {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;}
+        .N {
+            width: 25%;
+            height: 100%;
+            text-align: center;
+            border-top: solid 5px transparent;}
+        .N a:active {
+            border-top-color: #0065FC;
+            border-top: solid 5px}
+
+a {text-decoration: none;}
+.fa-star
+{color: #0065FC;}
+.empty .fa-star {color:#888888}
+
+
+
+#filtre {
+    display:flex;
+    flex-direction: Row;
+    Width: 50%;
+    justify-content:space-evenly;
+}
+.fil {
+    border: solid black;
+    border-radius: 30%;
+}
+.fa-money-bill {
+    color:#0065FC ; 
+    background-color: paleturquoise; 
+    border-radius: 100%;}
+
+#hotel {
+    display: flex;
+    justify-content: space-evenly;}
+
+body {
+    display:flex;
+    flex-direction: column;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+
+#hebergement {
+    width:70%; 
+    background-color:#F2F2F2 ; 
+    border-radius: 7%; 
+    display:flex;
+    margin: 1%;
+    flex-direction: column; 
+    float:left}
+    #hebergement h3 {padding-left: 5%;}
+    #hebergement h4 {padding-left: 5%;}
+    #hebergement .rating {padding-left: 5%;}
+    .R1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin:1%
+    }
+    .heb {
+        border-radius: 15%;
+        background-color: white;
+        width: 30%;}
+    .heb img {
+        width: 100%;
+        object-fit: fill;
+        height: 200px;
+        border-top-left-radius: 15%;
+        border-top-right-radius: 15%;}
+    .heb p {
+        margin-left: 10px;
+        color: grey
+    }
+
+#populaire {
+    width:25%;
+    background-color: #F2F2F2; 
+    border-radius: 7%; 
+    float:right; 
+    display:flex; 
+    justify-content:center, space-between; 
+    padding: 1%}
+    .pop {
+        width: 95%;
+        height: 27%;
+        background-color: white;
+        border-radius: 7%;
+        padding: 2%;
+        margin:1%
+    }
+    .pop img {
+        object-fit: fill;
+        width: 35%;
+        height: 100%;
+        float: left;
+        border-top-left-radius: 7%;
+        border-bottom-left-radius: 7%;
+    }
+
+#act {
+    width: 100%;
+    height:max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.bact {
+    display:flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-evenly;
+}
+    .Act1 {
+        display:flex;
+        flex-direction: column;
+        width: 45%;
+        height:90%;
+        float: left;
+        border-radius:5%;
+        border-width: 5%;
+        margin:5%;
+        box-shadow: 10px 10px 8px 10px #888888;
+    }
+    .Act1 img {
+        height:100%;
+        border-top-left-radius:5%;
+        border-top-right-radius: 5%;
+    }
+    .cact{
+        display:flex;
+        flex-direction:column;
+        width:50%;
+        justify-content: space-evenly;
+        margin:5%
+    }
+    .Act2 {
+        display: flex;
+        flex-direction: column;
+        width:95%;
+        height:45%;
+        border-radius: 5%;
+        margin:5%;
+        box-shadow: 10px 10px 8px 10px #888888
+    }
+    .Act2 img {
+        height:100%;
+        width: 100%;
+        border-top-left-radius: 5%;
+        border-top-right-radius: 5%;
+    }
+
+
+
+
+footer {
+    background-color:#F2F2F2;
+    display: flex;
+    Flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0%
+}
+    .FH {font-size: larger; font-weight: boldS;}
 li {list-style-type: none;}
