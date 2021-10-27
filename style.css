@@ -27,22 +27,58 @@ a {text-decoration: none;}
 {color: #0065FC;}
 .empty .fa-star {color:#888888}
 
+#barsearch {display: flex ;flex-direction:row}
+#pin {background-color: #F2F2F2;
+    width:2%;
+    float:left;
+    padding: 0.6%;
+    text-align: center;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+    font-size: x-large
+}
+#barre {padding: 0.4%}
+#search {background-color:#0065FC;
+    color:white;
+    padding: 0.5%;
+    border-style: none;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    font-weight: bold;
+}
+
 
 
 #filtre {
     display:flex;
     flex-direction: Row;
-    Width: 50%;
-    justify-content:space-evenly;
+    Width: 75%;
+    justify-content: space-between;
 }
 .fil {
     border: solid black;
-    border-radius: 30%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    display: flex;
+    flex-direction: row;
+    border-color:#F2F2F2;
 }
-.fa-money-bill {
-    color:#0065FC ; 
-    background-color: paleturquoise; 
-    border-radius: 100%;}
+.ficon {
+    background-color: rgb(198, 239, 255);
+    float:left;
+    display:flex;
+    border-radius: 100%;
+    font-size:x-large;
+    color:#0065FC;
+    padding: 5%;
+    object-fit: fill;
+    width: 25%
+}
+.ftext {width: 75%;
+display:flex}
+
 
 #hotel {
     display: flex;
@@ -63,8 +99,9 @@ body {
     margin: 1%;
     flex-direction: column; 
     float:left}
+    #hebergement h2 {padding-left: 6%;}
     #hebergement h3 {padding-left: 5%;}
-    #hebergement h4 {padding-left: 5%;}
+    #hebergement h4 {color:black; padding-left: 3%}
     #hebergement .rating {padding-left: 5%;}
     .R1 {
         display: flex;
@@ -100,8 +137,8 @@ body {
         height: 27%;
         background-color: white;
         border-radius: 7%;
-        padding: 2%;
-        margin:1%
+        padding: 1%;
+        margin:3%
     }
     .pop img {
         object-fit: fill;
@@ -125,6 +162,7 @@ body {
     width: 50%;
     justify-content: space-evenly;
 }
+.bact p {padding-left: 2%; font-weight: bold;}
     .Act1 {
         display:flex;
         flex-direction: column;
@@ -163,8 +201,6 @@ body {
         border-top-left-radius: 5%;
         border-top-right-radius: 5%;
     }
-
-
 
 
 footer {
