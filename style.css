@@ -27,7 +27,11 @@ a {text-decoration: none;}
 {color: #0065FC;}
 .empty .fa-star {color:#888888}
 
-#barsearch {display: flex ;flex-direction:row}
+#barsearch {
+    display: flex ;
+    flex-direction:row;
+    margin-bottom: 3%
+}
 #pin {background-color: #F2F2F2;
     width:2%;
     float:left;
@@ -40,7 +44,7 @@ a {text-decoration: none;}
 #barre {padding: 0.4%}
 #search {background-color:#0065FC;
     color:white;
-    padding: 0.5%;
+    padding: 1%;
     border-style: none;
     border-top-right-radius: 25%;
     border-bottom-right-radius: 25%;
@@ -53,32 +57,44 @@ a {text-decoration: none;}
     display:flex;
     flex-direction: Row;
     Width: 75%;
-    justify-content: space-between;
+}
+.filtit{margin-right:10%}
+.allfil {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between
 }
 .fil {
-    border: solid black;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
     display: flex;
-    flex-direction: row;
-    border-color:#F2F2F2;
+  align-items: center;
+  margin-right: 2rem;
+  border: 2px solid #d9d9d9;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  font-weight: bold;
 }
 .ficon {
-    background-color: rgb(198, 239, 255);
-    float:left;
-    display:flex;
+    background-color: #DEEBFF;
     border-radius: 100%;
-    font-size:x-large;
+    height: 3rem;
+    width: 3rem;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
     color:#0065FC;
-    padding: 5%;
-    object-fit: fill;
-    width: 25%
 }
-.ftext {width: 75%;
-display:flex}
 
+.ftext {width: 100%;
+display:flex;
+padding-left:0.5rem;
+padding-right: 0.5rem}
+
+.fil:hover {border: #0065FC solid 4px}
 
 #hotel {
     display: flex;
@@ -127,8 +143,8 @@ body {
 #populaire {
     width:25%;
     background-color: #F2F2F2; 
-    border-radius: 7%; 
-    float:right; 
+    border-radius: 7%;
+    float: right; 
     display:flex; 
     justify-content:center, space-between; 
     padding: 1%}
@@ -148,7 +164,6 @@ body {
         border-top-left-radius: 7%;
         border-bottom-left-radius: 7%;
     }
-
 #act {
     width: 100%;
     height:max-content;
@@ -178,6 +193,7 @@ body {
         height:100%;
         border-top-left-radius:5%;
         border-top-right-radius: 5%;
+        object-fit: cover;
     }
     .cact{
         display:flex;
@@ -210,5 +226,82 @@ footer {
     justify-content: space-evenly;
     margin: 0%
 }
-    .FH {font-size: larger; font-weight: boldS;}
+    .FH {font-size: larger; font-weight: bold;}
+    .F li {
+        margin-bottom:5%
+    }
 li {list-style-type: none;}
+
+@media (max-width:780px) {
+
+    header {display: flex;
+    flex-direction: column;}
+    #Headtitle {width:100%;
+    justify-content: center;}
+    #menu {display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%
+    }
+    .N a:active {
+        border-bottom:#0065FC solid 5px;
+        border-top: none
+    }
+
+    #barsearch {width:100%}
+    #pin {width:10%}
+
+#filtre {
+    display: flex;
+    flex-direction: column;
+    width:100%
+}
+.allfil {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+     #hotel {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    #hebergement {
+        background-color: white;
+        width: 100%
+    }
+    .R1 {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+    }
+    .heb {width: 98%;
+        box-shadow: 10px 10px 8px 10px #888888;
+        margin: 3%
+    }
+
+    #populaire {width: 100%}
+    .pop {width:95%}
+
+    #act  {
+        display: flex;
+        flex-direction: column;
+    }
+    .bact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 50%
+    }
+    .Act1 {width:95%;
+    height:25%}
+    .cact {width: 100%;
+    height:50%}
+    .Act2 {width: 95%;
+    height: 50%}
+
+    footer{
+        display: flex;
+        flex-direction: column
+    }
+}
